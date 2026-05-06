@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">K M Consulting</title>
+  <desc id="desc">Open graph card for K M Consulting.</desc>
+  <rect width="1200" height="630" fill="#080808"/>
+  <g stroke="#323232" stroke-width="1">
+    <path d="M120 0V630M420 0V630M1080 0V630M0 120H1200M0 510H1200"/>
+  </g>
+  <circle cx="880" cy="300" r="170" fill="none" stroke="#0064FD" stroke-width="2" opacity=".8"/>
+  <circle cx="880" cy="300" r="96" fill="none" stroke="#7AC0FF" stroke-width="1" opacity=".55"/>
+  <text x="120" y="250" font-family="Montserrat, Arial, sans-serif" font-size="82" font-weight="300" fill="#E7E7ED">K M Consulting</text>
+  <text x="124" y="318" font-family="Roboto Mono, monospace" font-size="28" fill="#9E9E9E">Preschool &amp; Kindergarten Setup Consultants</text>
+  <text x="124" y="380" font-family="Roboto Mono, monospace" font-size="22" fill="#7AC0FF">ISO 9001:2015 / Since 2010 / Early Education Advisory</text>
+</svg>
