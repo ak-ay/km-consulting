@@ -167,6 +167,7 @@ if (quoteForm && formStatus) {
     event.preventDefault();
 
     const data = new FormData(quoteForm);
+    const payload = JSON.stringify(Object.fromEntries(data));
     const submitButton = quoteForm.querySelector('button[type="submit"]');
     const originalButtonText = submitButton ? submitButton.textContent : "";
 
@@ -176,16 +177,19 @@ if (quoteForm && formStatus) {
       submitButton.textContent = "Sending...";
     }
 
-    fetch("https://formsubmit.co/ajax/reachus@kmconsulting.org.in", {
+    fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: data,
       headers: {
+        "Content-Type": "application/json",
         Accept: "application/json",
       },
+      body: payload,
     })
       .then((response) => {
-        if (!response.ok) throw new Error("Form submission failed");
-        return response.json();
+        return response.json().then((result) => {
+          if (!response.ok || !result.success) throw new Error("Form submission failed");
+          return result;
+        });
       })
       .then(() => {
         quoteForm.reset();
