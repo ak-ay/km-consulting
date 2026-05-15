@@ -1006,6 +1006,8 @@ h1 em, h2 em {
 }
 
 .quote-row figure {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 1.2rem;
   border: 1px solid var(--line);
@@ -1024,6 +1026,11 @@ h1 em, h2 em {
   font-size: var(--type-body);
   line-height: var(--leading-copy);
   letter-spacing: var(--tracking-copy);
+}
+
+.quote-row figcaption {
+  margin-top: auto;
+  padding-top: 1.6rem;
 }
 
 /* ---------- Contact ---------- */
